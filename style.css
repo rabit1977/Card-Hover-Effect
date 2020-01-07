@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+img {
+  width: 100%;
+}
+.card {
+  width: 100%;
+  max-width: 35rem;
+  background-color: #fff;
+  padding: 2.5rem;
+  box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+.card-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 98, 225, 0.9);
+  height: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 5rem;
+  transform: translate(35rem, -29rem); 
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.card:hover .card-info {
+  transform: translate(0, 0);
+  border-radius: initial;
+  outline: 0.5rem solid rgba(255, 255, 255, 0.3);
+  outline-offset: -1.5rem;
+}
+.price {
+  font-size: 2.5rem;
+}
+.description {
+  font-size: 1.6rem;
+}
+.cta {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 1rem 0;
+  transition: transform 0.5s;
+}
+.cta:hover {
+  transform: translateY(-3px);
+}
